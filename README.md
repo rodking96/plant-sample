@@ -46,7 +46,9 @@
 <div scroll-down">
   <a href=#"><i class="ri-arrow-down-s-fill"></i></a>
 </div>
-
+  <!--------------scrollreveal effect------>
+<script src="https:unpkg.com/scrollreveal"></script>
+  
 <script src="./js/script.js"></script>
 </body>
 </html>
@@ -246,10 +248,26 @@ section{
 }
 
 
+<!------------------JS---------------->
 
+let menu = document.querySelector('#menu-icon');
+let navlist = document.querySelector('.navlist');
 
+menu.onclick = () => {
+  menu.classlist.toggle('bx-x');
+  navlist.classlist.toggle('open');
+};
 
-
+cons sr = ScrollReveal ({
+  distance: '65px',
+  duration: 2600,
+  delay: 450,
+  reset: true,
+});
+sr.reveal('.hero-text', {delay:200, origin:'top'});
+sr.reveal('.hero-img', {delay:450, origin:'top'});
+sr.reveal('.icons', {delay:500, origin:'left'});
+sr.reveal('.scroll-down', {delay:500, origin:'right'});
 
 
 
