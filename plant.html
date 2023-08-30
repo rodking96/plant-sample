@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+    <html>
+      <head>
+        <title>Rodrigo Reyes // Web Developer</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/plant.css">
+      </head>
+    
+      <body>
+        <!-- Header -->
+        <header>
+            <a href="index.html" class="logo">Sprout Sage</a>
+          <!-- Navbar -->
+        <nav>
+            <ul>
+                <li><a href="#">Plan</a></li>
+                <li><a href="#">Track</a></li>
+                <li><a href="#">Reminder</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+              </ul>
+        </nav>
+        </header>
+        <div id="searchContainer">
+            <input type="text" id="plantName" placeholder="Enter plant name">
+            <button id="plantSearchButton">Search</button>
+        </div>
+        <div id="infoContainer">
+            <h2 id="infoHeader"></h2>
+            <div id="perunialInfo"></div>
+            <div id="expandedInfo"></div> 
+        </div>
+        <script src="./js/ai.js"></script>
+        <script src="./js/api.js"></script>
+    
+      </body>
+    </html>

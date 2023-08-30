@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     /* Center content vertically */
+    min-height: 100vh;
+}
+   nav {
+    /* Turns this element into a flexbox */
+    display: flex;
+    flex-direction: row;
+    /* Forces elements to the next line if they don't fit */
+    flex-wrap: wrap;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+  }
+  
+  nav a {
+    color: white; 
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-size: 100% 0,2em;
+    background-position: bottom;
+    transition: all 0.25s ease-in;
+    font-size: 1.4rem;
+  }
+
+  nav a:hover {
+    background-size: 100% 100%;
+    color: white;
+  }
+
+  nav a:last-child {
+    margin-right: 0;
+  }
+
+header {
+    background-color: #4d9559;
+    color: white;
+    text-align: left;
+    padding: 33px 9%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+  }
+
+#searchContainer {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#plantName {
+    padding: 5px;
+    border: 1px solid #4d9559;
+}
+
+#searchButton {
+    padding: 5px 10px;
+    background-color: #4d9559;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#infoContainer {
+    display: flex; /* Display flex to arrange divs side by side */
+    flex-wrap: wrap; /* Allow wrapping if screen is narrow */
+    justify-content: center; /* Center divs horizontally */
+    align-items: center; /* Center divs vertically */
+    margin-top: 20px; /* Add space below the header */
+    width: 100%; /* Take up full width */
+    background-color: #4d9559;
+}
+
+#perunialInfo {
+    flex: 1; /* Allow divs to share available space equally */
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px; /* Add spacing between divs */
+    max-width: calc(50% - 20px); /* Limit divs to half of the available width minus spacing */
+    text-align: center;
+}
+
+#expandedInfo {
+    flex: 1; /* Allow divs to share available space equally */
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px; /* Add spacing between divs */
+    max-width: calc(50% - 20px); /* Limit divs to half of the available width minus spacing */
+}
+
+h2 {
+    background-color: #4d9559;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+    width: 100%;
+}
+
+#infoHeader {
+    background-color: #4d9559;
+    width: 100%;
+}
